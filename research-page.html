@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research | Kamdhenu Conservation Initiative</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="bg-indigo-50 font-sans">
+    <header class="bg-indigo-800 text-white py-6">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl font-bold">Scientific Research and Genetic Studies</h1>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12">
+        <section class="grid md:grid-cols-2 gap-10">
+            <div>
+                <h2 class="text-3xl font-semibold text-indigo-800 mb-6">Ongoing Research Initiatives</h2>
+                <ul class="space-y-4">
+                    <li class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold text-indigo-700 mb-2">Genetic Diversity Mapping</h3>
+                        <p>Comprehensive genomic study of indigenous cow breeds to preserve and understand their unique genetic characteristics.</p>
+                    </li>
+                    <li class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold text-indigo-700 mb-2">Climate Adaptation Research</h3>
+                        <p>Investigating the resilience of indigenous breeds to changing environmental conditions and climate challenges.</p>
+                    </li>
+                    <li class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold text-indigo-700 mb-2">Nutritional Value Analysis</h3>
+                        <p>Detailed nutritional profiling of milk from different indigenous cow breeds.</p>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <canvas id="research-funding-chart"></canvas>
+                <script>
+                    // Research Funding Chart
+                    const ctx = document.getElementById('research-funding-chart').getContext('2d');
+                    new Chart(ctx, {
+                        type: 'pie',
+                        data: {
+                            labels: ['Genetic Research', 'Climate Studies', 'Nutritional Analysis', 'Conservation Tech'],
+                            datasets: [{
+                                data: [35, 25, 20, 20],
+                                backgroundColor: [
+                                    'rgba(99, 102, 241, 0.8)',
+                                    'rgba(129, 140, 248, 0.8)',
+                                    'rgba(165, 180, 252, 0.8)',
+                                    'rgba(199, 210, 254, 0.8)'
+                                ]
+                            }]
+                        },
+                        options: {
+                            responsive: true,
+                            plugins: {
+                                title: {
+                                    display: true,
+                                    text: 'Research Funding Distribution'
+                                }
+                            }
+                        }
+                    });
+                </script>
+            </div>
+        </section>
+
+        <section class="mt-16 bg-white p-10 rounded-lg shadow-lg">
+            <h2 class="text-3xl font-semibold text-indigo-800 mb-6">Research Publications</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="border p-4 rounded-lg">
+                    <h3 class="font-bold text-indigo-700">Genetic Diversity of Indian Cattle</h3>
+                    <p class="text-gray-600">Journal of Animal Science, 2023</p>
+                    <a href="#" class="text-indigo-500 hover:underline">Download PDF</a>
+                </div>
+                <div class="border p-4 rounded-lg">
+                    <h3 class="font-bold text-indigo-700">Climate Resilience in Indigenous Breeds</h3>
+                    <p class="text-gray-600">Environmental Biology, 2022</p>
+                    <a href="#" class="text-indigo-500 hover:underline">Download PDF</a>
+                </div>
+                <div class="border p-4 rounded-lg">
+                    <h3 class="font-bold text-indigo-700">Nutritional Profiling Study</h3>
+                    <p class="text-gray-600">Dairy Science Review, 2023</p>
+                    <a href="#" class="text-indigo-500 hover:underline">Download PDF</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-indigo-900 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2024 Kamdhenu Research Division</p>
+        </div>
+    </footer>
+</body>
+</html>

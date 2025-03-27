@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamdhenu: Preserving India's Cow Heritage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-indigo-50 to-indigo-100 font-sans">
+    <header class="fixed w-full z-50 bg-indigo-800 bg-opacity-90 text-white py-4 shadow-lg">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="logo flex items-center">
+                <img src="logo1.png" alt="Kamdhenu Logo" class="h-12 mr-4 animate__animated animate__pulse" style="border-radius: 50%;">
+                <h1 class="text-2xl font-bold tracking-wider">Kamdhenu Conservation Initiative</h1>
+            </div>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#home" class="nav-link hover:text-indigo-300">Home</a></li>
+                    <li><a href="#breeds" class="nav-link hover:text-indigo-300">Cow Breeds</a></li>
+                    <li><a href="#conservation" class="nav-link hover:text-indigo-300">Conservation</a></li>
+                    <li><a href="#impact" class="nav-link hover:text-indigo-300">Impact</a></li>
+                    <li><a href="#contact" class="nav-link hover:text-indigo-300">Contact</a></li>
+                    <li><a href="education-page.html" class="nav-link hover:text-indigo-300">Education</a></li>
+                    <li><a href="research-page.html" class="nav-link hover:text-indigo-300">Research</a></li>
+                    <li><a href="donation-page.html" class="nav-link hover:text-indigo-300">Donation</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="pt-20">
+        <section id="home" class="hero min-h-screen flex items-center bg-cover bg-center" style="background-image: url('indian-cow.jpg');">
+            <div class="container mx-auto px-4">
+                <div class="bg-indigo-900 bg-opacity-70 p-10 rounded-xl max-w-2xl">
+                    <h2 class="text-5xl font-bold text-white mb-6 animate__animated animate__fadeInLeft">Reviving India's Sacred Cow Breeds</h2>
+                    <p class="text-xl text-indigo-100 mb-8 animate__animated animate__fadeInRight">Preserving Genetic Heritage, Promoting Sustainable Living</p>
+                    <a href="#breeds" class="btn-primary animate__animated animate__bounceIn bg-indigo-600 text-white px-6 py-3 rounded-full hover:bg-indigo-500 transition-colors">
+                        Discover Indigenous Breeds
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="breeds" class="py-20 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold text-center mb-12 text-indigo-800">Indigenous Cow Breeds of India</h2>
+                <div class="grid md:grid-cols-3 gap-8" id="breed-list">
+                    <!-- Breed cards will be dynamically populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <section id="breed-details" class="py-16 bg-indigo-50">
+            <div class="container mx-auto px-4">
+                <h3 class="text-3xl font-bold text-center mb-10 text-indigo-900">Detailed Breed Information</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="breed-details-content">
+                    <div class="breed-detail-card bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all">
+                        <h4 class="text-2xl font-semibold mb-4 text-indigo-700"><a href="https://en.wikipedia.org/wiki/Gyr_cattle">Gir Cow</a></h4>
+                        <p class="text-gray-700 mb-4">
+                            Native to Gujarat, the Gir cow is renowned for its exceptional milk production and heat resistance. These cows are known for their distinctive appearance with large, drooping ears and a prominent forehead.
+                        </p>
+                        <ul class="text-indigo-600 space-y-2">
+                            <li>🥛 Average Milk Yield: 3500-4000 kg per lactation</li>
+                            <li>🌞 Highly adaptable to tropical climates</li>
+                            <li>🧬 Genetic purity maintained through careful breeding</li>
+                        </ul>
+                    </div>
+
+                    <div class="breed-detail-card bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all">
+                        <h4 class="text-2xl font-semibold mb-4 text-indigo-700"><a href="https://en.wikipedia.org/wiki/Sahiwal_cattle">Sahiwal Cow</a></h4>
+                        <p class="text-gray-700 mb-4">
+                            Originating from Punjab, Sahiwal cows are prized for their high milk production and docile nature. They are considered one of the best dairy breeds in India, known for their excellent milk quality.
+                        </p>
+                        <ul class="text-indigo-600 space-y-2">
+                            <li>🥛 Average Milk Yield: 2500-3000 kg per lactation</li>
+                            <li>🤲 Gentle temperament, easy to handle</li>
+                            <li>🌿 Excellent foragers, low maintenance</li>
+                        </ul>
+                    </div>
+
+                    <div class="breed-detail-card bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all">
+                        <h4 class="text-2xl font-semibold mb-4 text-indigo-700"><a href="https://en.wikipedia.org/wiki/Red_Sindhi">Red Sindhi Cow</a></h4>
+                        <p class="text-gray-700 mb-4">
+                            From the Sindh region, Red Sindhi cows are celebrated for their adaptability and consistent milk production. They have a distinctive reddish-brown coat and are highly valued in dairy farming.
+                        </p>
+                        <ul class="text-indigo-600 space-y-2">
+                            <li>🥛 Average Milk Yield: 2000-2500 kg per lactation</li>
+                            <li>🌍 Widely distributed across India</li>
+                            <li>💪 Strong immunity and disease resistance</li>
+                        </ul>
+                    </div>
+
+                    <div class="breed-detail-card bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all">
+                        <h4 class="text-2xl font-semibold mb-4 text-indigo-700"><a href="https://en.wikipedia.org/wiki/Tharparkar_cattle">Tharparkar Cow</a></h4>
+                        <p class="text-gray-700 mb-4">
+                            Native to the Thar Desert region of Rajasthan, Tharparkar cows are known for their remarkable ability to survive in harsh, arid conditions while maintaining good milk production.
+                        </p>
+                        <ul class="text-indigo-600 space-y-2">
+                            <li>🥛 Average Milk Yield: 2000-2500 kg per lactation</li>
+                            <li>🏜️ Exceptional desert adaptability</li>
+                            <li>💧 Low water and feed requirements</li>
+                        </ul>
+                    </div>
+
+                    <div class="breed-detail-card bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all">
+                        <h4 class="text-2xl font-semibold mb-4 text-indigo-700"><a href="https://en.wikipedia.org/wiki/Kangayam_cattle">Kangeyam Cow</a></h4>
+                        <p class="text-gray-700 mb-4">
+                            Originating from Tamil Nadu, Kangeyam cows are robust draft animals with excellent strength and endurance. They play a crucial role in traditional agricultural practices.
+                        </p>
+                        <ul class="text-indigo-600 space-y-2">
+                            <li>💪 Exceptional draft animal capabilities</li>
+                            <li>🌾 Vital in traditional farming</li>
+                            <li>🧬 Unique genetic characteristics</li>
+                        </ul>
+                    </div>
+
+                    <div class="breed-detail-card bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all">
+                        <h4 class="text-2xl font-semibold mb-4 text-indigo-700"><a href="https://en.wikipedia.org/wiki/Hallikar">Hallikar Cow</a></h4>
+                        <p class="text-gray-700 mb-4">
+                            From Karnataka, Hallikar cows are known for their incredible strength and endurance. They are excellent draft animals and have been traditionally used in agriculture and transportation.
+                        </p>
+                        <ul class="text-indigo-600 space-y-2">
+                            <li>🚜 Superior draft animal qualities</li>
+                            <li>🌄 Well-adapted to hilly terrains</li>
+                            <li>🔧 Critical in rural agricultural systems</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="conservation" class="py-16 bg-indigo-100">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-10 text-indigo-900">Our Conservation Efforts</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="conservation-card bg-white p-8 rounded-lg shadow-lg text-center">
+                        <div class="text-6xl text-indigo-600 mb-4">🧬</div>
+                        <h3 class="text-2xl font-semibold mb-4">Genetic Preservation</h3>
+                        <p>Advanced breeding programs to maintain and enhance genetic diversity of indigenous cow breeds.</p>
+                    </div>
+                    <div class="conservation-card bg-white p-8 rounded-lg shadow-lg text-center">
+                        <div class="text-6xl text-indigo-600 mb-4">👩‍🌾</div>
+                        <h3 class="text-2xl font-semibold mb-4">Farmer Empowerment</h3>
+                        <p>Training and support programs to help farmers understand and value indigenous cow breeds.</p>
+                    </div>
+                    <div class="conservation-card bg-white p-8 rounded-lg shadow-lg text-center">
+                        <div class="text-6xl text-indigo-600 mb-4">🌍</div>
+                        <h3 class="text-2xl font-semibold mb-4">Sustainable Practices</h3>
+                        <p>Promoting traditional farming methods that integrate indigenous cow breeds for ecological balance.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="impact" class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-10 text-indigo-900">Environmental & Economic Impact</h2>
+                <div class="grid md:grid-cols-2 gap-10">
+                    <div class="bg-indigo-50 p-8 rounded-lg">
+                        <h3 class="text-2xl font-semibold mb-6 text-indigo-800">Environmental Benefits</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-center">
+                                <span class="text-indigo-600 mr-4">🌱</span>
+                                <span>Carbon Sequestration through Sustainable Grazing</span>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="text-indigo-600 mr-4">🌿</span>
+                                <span>Preservation of Grassland Biodiversity</span>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="text-indigo-600 mr-4">♻️</span>
+                                <span>Natural Soil Fertility Enhancement</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-indigo-50 p-8 rounded-lg">
+                        <h3 class="text-2xl font-semibold mb-6 text-indigo-800">Economic Significance</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-center">
+                                <span class="text-indigo-600 mr-4">💰</span>
+                                <span>Multiple Income Streams for Rural Families</span>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="text-indigo-600 mr-4">🥛</span>
+                                <span>High-Quality, Nutrient-Rich Milk Production</span>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="text-indigo-600 mr-4">🚜</span>
+                                <span>Essential Agricultural Support</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-12 text-center">
+                    <canvas id="impact-chart" class="mx-auto max-w-2xl"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-16 bg-indigo-800 text-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-10">Join Our Conservation Movement</h2>
+                <form id="contact-form" class="max-w-lg mx-auto">
+                    <input type="text" placeholder="Your Name" required class="w-full mb-4 p-3 rounded text-black">
+                    <input type="email" placeholder="Your Email" required class="w-full mb-4 p-3 rounded text-black">
+                    <textarea placeholder="Your Message" required class="w-full mb-4 p-3 rounded text-black h-32"></textarea>
+                    <button type="submit" class="w-full bg-white text-indigo-800 hover:bg-indigo-100 font-bold py-3 px-6 rounded-full transition-colors">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2024 Kamdhenu Conservation Initiative. All Rights Reserved.</p>
+            <div class="mt-4 flex justify-center space-x-6">
+                <a href="#" class="hover:text-indigo-400">Privacy Policy</a>
+                <a href="#" class="hover:text-indigo-400">Terms of Service</a>
+                <a href="#" class="hover:text-indigo-400">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
